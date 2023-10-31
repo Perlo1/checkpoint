@@ -1,0 +1,75 @@
+.main {
+    display: flex;
+    gap: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bottombar {
+    background-color: darkblue;
+    height: 50vh;
+    width: 85vw;
+    gap: 5vh;
+}
+
+.topbar {
+    background-color: lightblue;
+    padding: 3%;
+    gap: 5vh;
+}
+
+.sidebar {
+    background-color: blue;
+    height: 85vh;
+    width: 30vh;
+    gap: 5vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.topcard {
+    background-color: lightgreen;
+    height: 30vh;
+    width: 45vh;
+    gap: 5vh;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5vh;
+}
+
+.cardone {
+    display: flex;
+    background-color: lightgreen;
+    height: 30vh;
+    width: 45vh;
+    gap: 5vh;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .cardcontainer {
+        flex-direction: column;
+    }
+    .bottombar {
+        width: 100vw;
+    }
+    .topbar {
+        width: 100vw;
+    }
+    .topcard {
+        width: 100vw;
+    }
+}
